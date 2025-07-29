@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Graphic Arts - Corporate Gifts for Every Occasion</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="New Graphic Arts: Your premier destination for corporate gifts and personalized gifting solutions for every occasion imaginable. From eco-friendly items to tech gadgets, apparel, gift sets, and more.">
+    <meta name="keywords" content="corporate gifts, personalized gifts, custom gifts, business gifts, corporate gifting, gift sets, eco-friendly gifts, tech gadgets, branded apparel, desk accessories, premium drinkware, custom hampers, calendars, pens, keyrings, bags, t-shirts, caps, diaries, wallets, purses, clocks, New Graphic Arts, gifts for every occasion">
+    <meta name="author" content="New Graphic Arts">
+
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:title" content="New Graphic Arts - Corporate Gifts for Every Occasion">
+    <meta property="og:description" content="New Graphic Arts: Your premier destination for corporate gifts and personalized gifting solutions for every occasion imaginable. From eco-friendly items to tech gadgets, apparel, gift sets, and more.">
+    <meta property="og:image" content="https://placehold.co/1200x630/E0E7FF/3B82F6?text=New+Graphic+Arts+Gifts"> <!-- Replace with your actual logo/banner image URL -->
+    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE"> <!-- IMPORTANT: Replace with your actual website URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom font for better aesthetics */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F8FAFC; /* Lighter, more elegant background */
+            color: #333; /* Default text color */
+        }
+        /* Custom checkbox styling for a more refined look */
+        .form-checkbox:checked {
+            background-color: #1D4ED8; /* Deeper blue */
+            border-color: #1D4ED8;
+        }
+        
+        .form-checkbox {
+            border-radius: 0.25rem; /* rounded-sm */
+            border-width: 1px;
+            border-color: #CBD5E1; /* subtle gray border */
+            color: #1D4ED8; /* text-blue-800 */
+            height: 1.15rem; /* Slightly smaller */
+            width: 1.15rem; /* Slightly smaller */
+            flex-shrink: 0;
+            margin-right: 0.5rem;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            cursor: pointer;
+            position: relative;
+            transition: all 0.2s ease-in-out; /* Smooth transition */
+        }
+        .form-checkbox:checked::before {
+            content: '\2713'; /* Checkmark character */
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 0.7rem; /* Adjusted size */
+            color: white;
+        }
+        .form-checkbox:hover {
+            border-color: #60A5FA; /* Light blue on hover */
+            box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.3); /* Subtle hover shadow */
+        }
+
+        /* Modal transition styles */
+        .modal-content-enter {
+            transform: translateY(-20px) scale(0.98);
+            opacity: 0;
+        }
+        .modal-content-enter-active {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+            transition: all 300ms cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncy transition */
+        }
+        .modal-content-exit {
+            transform: translateY(0) scale(1);
+            opacity: 1;
+        }
+        .modal-content-exit-active {
+            transform: translateY(-20px) scale(0.98);
+            opacity: 0;
+            transition: all 300ms ease-in;
+        }
+
+        /* Custom button styling for hover effects */
+        .btn-primary {
+            background-image: linear-gradient(to right, #2563EB 0%, #1D4ED8 100%);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            background-position: right center; /* change the direction of the change here */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #6B7280; /* Gray-500 */
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+        .btn-secondary:hover {
+            background-color: #4B5563; /* Gray-700 */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            transform: translateY(-2px);
+        }
+    </style>
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "New Graphic Arts",
+      "image": "https://placehold.co/800x450/E0E7FF/3B82F6?text=New+Graphic+Arts+Logo",
+      "url": "YOUR_WEBSITE_URL_HERE", <!-- IMPORTANT: Replace with your actual website URL -->
+      "telephone": "+91XXXXXXXXXX", <!-- Replace with your actual phone number -->
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Your Street Address", <!-- Replace with your actual street address -->
+        "addressLocality": "Your City", <!-- Replace with your actual city -->
+        "addressRegion": "Your State", <!-- Replace with your actual state -->
+        "postalCode": "Your Postal Code", <!-- Replace with your actual postal code -->
+        "addressCountry": "IN"
+      },
+      "priceRange": "₹₹",
+      "slogan": "HUM BANATE HAI APKE LIYE APKE APNO KE LIYE - We create gifts for every occasion you can imagine",
+      "description": "New Graphic Arts is your premier partner for corporate gifting solutions, offering a wide range of personalized and high-quality gifts for every occasion imaginable. From eco-friendly products to tech gadgets, custom apparel, and unique gift sets, we help you make a lasting impression.",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Corporate Gifts Catalog",
+        "itemListElement": [
+          {
+            "@type": "OfferCatalog",
+            "name": "Eco-Friendly Gifts",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Eco-Friendly Notebook Set"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Succulent Plant Pot"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Tech Gadgets",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Wireless Charging Pad"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Smart Bluetooth Speaker"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Branded Apparel",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Branded Polo T-Shirt"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Custom Dry-Fit T-Shirt"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Premium Cotton T-Shirt"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Branded Sports Cap"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Classic Baseball Cap"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Desk Accessories",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Executive Pen Set"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Premium Rollerball Pen"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Stylus Pen with Logo"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Executive PU Leather Diary"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Customized A5 Notebook Diary"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Premium Drinkware",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Stainless Steel Water Bottle"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Smart Temperature Bottle"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Custom Engraved Glass Bottle"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Custom Hampers",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Gourmet Coffee Hamper"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Wellness Hamper"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Calendars",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Desk Calendar 2025"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Wall Calendar Deluxe"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Gift Sets",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Executive Gift Set"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Bags",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Custom Branded Backpack"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Laptop Messenger Bag"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Eco-Friendly Tote Bag"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Keyrings",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Leather Keyring with Engraving"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Metal Logo Keyring"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Wallets & Purses",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Personalized Leather Wallet"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Men's Bifold Wallet"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Ladies Clutch Purse"}}
+            ]
+          },
+          {
+            "@type": "OfferCatalog",
+            "name": "Clocks",
+            "itemListElement": [
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Digital Table Clock"}},
+              {"@type": "Offer", "itemOffered": {"@type": "Product", "name": "Classic Wall Clock"}}
+            ]
+          }
+        ]
+      }
+    }
+    </script>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+    <div class="max-w-7xl mx-auto bg-white p-6 rounded-2xl shadow-2xl border border-gray-100">
+        <!-- Brand Header -->
+        <header class="text-center mb-10 pb-6 border-b border-gray-200">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight leading-tight">New Graphic Arts</h1>
+            <p class="text-lg sm:text-xl text-blue-700 font-medium italic leading-relaxed">HUM BANATE HAI APKE LIYE APKE APNO KE LIYE</p>
+            <p class="text-md text-gray-600 mt-3">We create gifts for every occasion you can imagine. Your Partner in Premium Corporate Gifting Solutions.</p>
+        </header>
+
+        <!-- Filter Section: Categories and Product Count -->
+        <div class="mb-10 pb-6 border-b border-gray-200">
+            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+                <div class="mb-6 md:mb-0">
+                    <label class="block text-gray-700 text-lg font-bold mb-4">Filter by Categories:</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-y-3 gap-x-6 text-gray-700">
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="eco-friendly">
+                            <span class="ml-2 text-base font-medium">Eco-Friendly Gifts</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="tech-gadgets">
+                            <span class="ml-2 text-base font-medium">Tech Gadgets</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="apparel">
+                            <span class="ml-2 text-base font-medium">Branded Apparel</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="desk-accessories">
+                            <span class="ml-2 text-base font-medium">Desk Accessories</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="drinkware">
+                            <span class="ml-2 text-base font-medium">Premium Drinkware</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="custom-hampers">
+                            <span class="ml-2 text-base font-medium">Custom Hampers</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="calendars">
+                            <span class="ml-2 text-base font-medium">Calendars</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="gift-sets">
+                            <span class="ml-2 text-base font-medium">Gift Sets</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="bags">
+                            <span class="ml-2 text-base font-medium">Bags</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="keyrings">
+                            <span class="ml-2 text-base font-medium">Keyrings</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="wallets-purses">
+                            <span class="ml-2 text-base font-medium">Wallets & Purses</span>
+                        </label>
+                        <label class="inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="form-checkbox category-checkbox" value="clocks">
+                            <span class="ml-2 text-base font-medium">Clocks</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="text-right mt-6 md:mt-0">
+                    <p class="text-gray-700 text-md font-semibold">Total Products</p>
+                    <p id="product-count" class="text-blue-700 text-4xl font-extrabold">0</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Cards Section -->
+        <div id="product-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+            <!-- Product cards will be dynamically loaded here -->
+            <div class="col-span-full text-center text-gray-500" id="loading-message"></div>
+        </div>
+    </div>
+
+    <!-- Product Detail Modal -->
+    <div id="product-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
+        <div class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-2xl relative modal-content-enter">
+            <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold leading-none">&times;</button>
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="md:w-1/2 flex justify-center items-center bg-gray-50 rounded-lg p-4">
+                    <img id="modal-image" src="" alt="Product Image" class="max-h-80 max-w-full object-contain rounded-lg shadow-md">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 id="modal-title" class="text-3xl font-bold text-gray-900 mb-3 leading-tight"></h2>
+                    <p id="modal-description" class="text-gray-700 text-base leading-relaxed mb-4"></p>
+                    <p class="text-gray-600 text-sm">Product Code: <span id="modal-code" class="font-semibold text-gray-800"></span></p>
+                    <p class="text-gray-600 text-sm mt-1">Category: <span id="modal-category" class="font-semibold text-gray-800"></span></p>
+                    <p class="text-gray-900 text-2xl font-bold mt-4">Price: <span id="modal-price" class="font-extrabold text-blue-700"></span></p>
+                    <button id="enquire-button" class="mt-8 w-full btn-primary text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        Enquire Now on WhatsApp
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module">
+        // Product data defined locally as a JavaScript array
+        const allProducts = [
+            {
+                id: 'prod-001',
+                name: 'Eco-Friendly Notebook Set',
+                code: 'NGA-001',
+                imageUrl: 'https://i.postimg.cc/nVqrmDD6/OK-CATLOUGE-2026-page-0007.jpg', // Portrait
+                price: 499.00,
+                description: 'Crafted from recycled materials, perfect for sustainable gifting. This set includes a stylish notebook and a matching pen, making it an ideal corporate gift that promotes environmental responsibility.',
+                category: 'eco-friendly',
+                isNew: true
+            },
+            {
+                id: 'prod-002',
+                name: 'Wireless Charging Pad',
+                code: 'NGA-002',
+                imageUrl: 'https://i.postimg.cc/P5V5Hbg8/OK-CATLOUGE-2026-page-0008.jpg', // Landscape
+                price: 1299.50,
+                description: 'Fast and convenient charging for all compatible devices. A sleek and modern tech gadget that will be appreciated by any professional.',
+                category: 'tech-gadgets',
+                isNew: false
+            },
+            {
+                id: 'prod-003',
+                name: 'Branded Polo T-Shirt',
+                code: 'NGA-003',
+                imageUrl: 'https://i.postimg.cc/bwww4VBh/OK-CATLOUGE-2026-page-0009.jpg',
+                price: 750.00,
+                description: 'High-quality fabric with custom branding options. A comfortable and stylish apparel choice for your team or clients, perfect for corporate events.',
+                category: 'apparel',
+                isNew: false
+            },
+            {
+                id: 'prod-004',
+                name: 'Executive Pen Set',
+                code: 'NGA-004',
+                imageUrl: 'https://i.postimg.cc/PrhxQ5bN/OK-CATLOUGE-2026-page-0010.jpg', // Square
+                price: 899.00,
+                description: 'Elegant design, perfect for corporate executives. This premium pen set offers a smooth writing experience and a sophisticated look.',
+                category: 'desk-accessories',
+                isNew: false
+            },
+            {
+                id: 'prod-005',
+                name: 'Stainless Steel Water Bottle',
+                code: 'NGA-005',
+                imageUrl: 'https://picsum.photos/id/204/250/300',
+                price: 550.00,
+                description: 'Durable and stylish, ideal for daily hydration. A practical and eco-friendly gift that promotes health and wellness.',
+                category: 'drinkware',
+                isNew: false
+            },
+            {
+                id: 'prod-006',
+                name: 'Gourmet Coffee Hamper',
+                code: 'NGA-006',
+                imageUrl: 'https://picsum.photos/id/205/250/300',
+                price: 1800.00,
+                description: 'A delightful selection of premium coffees and treats. Perfect for a luxurious corporate gift or a special appreciation gesture.',
+                category: 'custom-hampers',
+                isNew: true
+            },
+            {
+                id: 'prod-007',
+                name: 'Smart Bluetooth Speaker',
+                code: 'NGA-007',
+                imageUrl: 'https://picsum.photos/id/206/300/250', // Slightly wider
+                price: 2499.00,
+                description: 'Portable audio with impressive sound quality. A high-tech gift that offers entertainment and convenience on the go.',
+                category: 'tech-gadgets',
+                isNew: false
+            },
+            {
+                id: 'prod-008',
+                name: 'Personalized Leather Wallet',
+                code: 'NGA-008',
+                imageUrl: 'https://picsum.photos/id/207/250/250', // Square
+                price: 999.00,
+                description: 'Premium quality leather, customizable with initials. A timeless and elegant gift that adds a personal touch.',
+                category: 'wallets-purses', // Changed category
+                isNew: false
+            },
+            {
+                id: 'prod-009',
+                name: 'Custom Branded Backpack',
+                code: 'NGA-009',
+                imageUrl: 'https://picsum.photos/id/208/250/350', // Taller portrait
+                price: 1500.00,
+                description: 'Spacious and durable, ideal for daily commute or travel. Perfect for employees or clients who are always on the move.',
+                category: 'bags', // Changed category
+                isNew: false
+            },
+            {
+                id: 'prod-010',
+                name: 'Succulent Plant Pot',
+                code: 'NGA-010',
+                imageUrl: 'https://picsum.photos/id/209/200/300',
+                price: 350.00,
+                description: 'A touch of green for the office, easy to care for. A thoughtful and refreshing gift that brightens any workspace.',
+                category: 'eco-friendly',
+                isNew: true
+            },
+            // --- New Categories and Products ---
+
+            // Calendars
+            {
+                id: 'prod-011',
+                name: 'Desk Calendar 2025',
+                code: 'NGA-011',
+                imageUrl: 'https://picsum.photos/id/210/280/220', // Landscape
+                price: 250.00,
+                description: 'High-quality desk calendar for 2025 with custom branding options. Perfect for office use.',
+                category: 'calendars',
+                isNew: true
+            },
+            {
+                id: 'prod-012',
+                name: 'Wall Calendar Deluxe',
+                code: 'NGA-012',
+                imageUrl: 'https://picsum.photos/id/211/300/280', // Square-ish
+                price: 380.00,
+                description: 'Premium wall calendar with stunning visuals and ample space for notes. Ideal for corporate branding.',
+                category: 'calendars',
+                isNew: false
+            },
+            // Gift Sets
+            {
+                id: 'prod-013',
+                name: 'Executive Gift Set',
+                code: 'NGA-013',
+                imageUrl: 'https://picsum.photos/id/212/300/250',
+                price: 2500.00,
+                description: 'A luxurious gift set including a premium pen, diary, and cardholder. Elegantly packaged for corporate gifting.',
+                category: 'gift-sets',
+                isNew: true
+            },
+            {
+                id: 'prod-014',
+                name: 'Wellness Hamper',
+                code: 'NGA-014',
+                imageUrl: 'https://picsum.photos/id/213/280/280',
+                price: 1800.00,
+                description: 'Promote well-being with this hamper featuring organic teas, aromatherapy oils, and a stress-relief gadget.',
+                category: 'gift-sets',
+                isNew: false
+            },
+            // Bottles (Drinkware already exists, but adding more specific 'bottles')
+            {
+                id: 'prod-015',
+                name: 'Smart Temperature Bottle',
+                code: 'NGA-015',
+                imageUrl: 'https://picsum.photos/id/214/200/300',
+                price: 950.00,
+                description: 'Insulated bottle with LED temperature display. Keeps drinks hot or cold for hours.',
+                category: 'drinkware', // Using existing drinkware category
+                isNew: true
+            },
+            {
+                id: 'prod-016',
+                name: 'Custom Engraved Glass Bottle',
+                code: 'NGA-016',
+                imageUrl: 'https://picsum.photos/id/215/220/280',
+                price: 700.00,
+                description: 'Elegant glass bottle, perfect for custom engraving with company logos or names.',
+                category: 'drinkware',
+                isNew: false
+            },
+            // Pens (Desk Accessories already exists, adding more specific 'pens')
+            {
+                id: 'prod-017',
+                name: 'Premium Rollerball Pen',
+                code: 'NGA-017',
+                imageUrl: 'https://picsum.photos/id/216/200/200',
+                price: 600.00,
+                description: 'Smooth writing rollerball pen with a sophisticated metallic finish. Ideal for corporate gifts.',
+                category: 'desk-accessories', // Using existing desk-accessories category
+                isNew: false
+            },
+            {
+                id: 'prod-018',
+                name: 'Stylus Pen with Logo',
+                code: 'NGA-018',
+                imageUrl: 'https://picsum.photos/id/217/250/180', // Landscape
+                price: 300.00,
+                description: 'Dual-function pen with a stylus tip, perfect for touchscreens. Customizable with your brand logo.',
+                category: 'desk-accessories',
+                isNew: false
+            },
+            // Keyrings
+            {
+                id: 'prod-019',
+                name: 'Leather Keyring with Engraving',
+                code: 'NGA-019',
+                imageUrl: 'https://picsum.photos/id/218/200/200',
+                price: 180.00,
+                description: 'Stylish leather keyring, can be engraved with company initials or a short message.',
+                category: 'keyrings',
+                isNew: true
+            },
+            {
+                id: 'prod-020',
+                name: 'Metal Logo Keyring',
+                code: 'NGA-020',
+                imageUrl: 'https://picsum.photos/id/219/220/220',
+                price: 150.00,
+                description: 'Durable metal keyring, perfect for showcasing your company logo in a compact form.',
+                category: 'keyrings',
+                isNew: false
+            },
+            // Bags
+            {
+                id: 'prod-021',
+                name: 'Laptop Messenger Bag',
+                code: 'NGA-021',
+                imageUrl: 'https://picsum.photos/id/220/300/250',
+                price: 2200.00,
+                description: 'Spacious and padded messenger bag designed to protect laptops and carry essentials.',
+                category: 'bags',
+                isNew: false
+            },
+            {
+                id: 'prod-022',
+                name: 'Eco-Friendly Tote Bag',
+                code: 'NGA-022',
+                imageUrl: 'https://picsum.photos/id/221/250/300',
+                price: 450.00,
+                description: 'Reusable tote bag made from sustainable materials, customizable with your brand.',
+                category: 'bags',
+                isNew: true
+            },
+            // T-shirts (Apparel already exists, adding more specific 't-shirts')
+            {
+                id: 'prod-023',
+                name: 'Custom Dry-Fit T-Shirt',
+                code: 'NGA-023',
+                imageUrl: 'https://picsum.photos/id/222/250/300',
+                price: 650.00,
+                description: 'Comfortable dry-fit t-shirt, ideal for sports events or casual corporate wear.',
+                category: 'apparel', // Using existing apparel category
+                isNew: false
+            },
+            {
+                id: 'prod-024',
+                name: 'Premium Cotton T-Shirt',
+                code: 'NGA-024',
+                imageUrl: 'https://picsum.photos/id/223/250/300',
+                price: 580.00,
+                description: 'Soft and breathable cotton t-shirt, perfect for everyday branding.',
+                category: 'apparel',
+                isNew: false
+            },
+            // Caps
+            {
+                id: 'prod-025',
+                name: 'Branded Sports Cap',
+                code: 'NGA-025',
+                imageUrl: 'https://picsum.photos/id/224/250/200', // Landscape
+                price: 320.00,
+                description: 'Adjustable sports cap with space for embroidered or printed logos.',
+                category: 'apparel', // Using apparel category
+                isNew: true
+            },
+            {
+                id: 'prod-026',
+                name: 'Classic Baseball Cap',
+                code: 'NGA-026',
+                imageUrl: 'https://picsum.photos/id/225/200/200', // Square
+                price: 280.00,
+                description: 'Timeless baseball cap design, available in various colors for custom branding.',
+                category: 'apparel',
+                isNew: false
+            },
+            // Diaries
+            {
+                id: 'prod-027',
+                name: 'Executive PU Leather Diary',
+                code: 'NGA-027',
+                imageUrl: 'https://picsum.photos/id/226/250/300',
+                price: 700.00,
+                description: 'High-quality PU leather diary with ample pages for notes and planning.',
+                category: 'desk-accessories', // Using desk-accessories category
+                isNew: false
+            },
+            {
+                id: 'prod-028',
+                name: 'Customized A5 Notebook Diary',
+                code: 'NGA-028',
+                imageUrl: 'https://picsum.photos/id/227/250/300',
+                price: 400.00,
+                description: 'A5 size diary with customizable cover, perfect for daily notes and reminders.',
+                category: 'desk-accessories',
+                isNew: true
+            },
+            // Wallets & Purses
+            {
+                id: 'prod-029',
+                name: 'Men\'s Bifold Wallet',
+                code: 'NGA-029',
+                imageUrl: 'https://picsum.photos/id/228/250/200', // Landscape
+                price: 850.00,
+                description: 'Classic bifold wallet with multiple card slots and a currency compartment. Can be personalized.',
+                category: 'wallets-purses',
+                isNew: false
+            },
+            {
+                id: 'prod-030',
+                name: 'Ladies Clutch Purse',
+                code: 'NGA-030',
+                imageUrl: 'https://picsum.photos/id/229/300/250', // Landscape
+                price: 1100.00,
+                description: 'Elegant clutch purse for ladies, suitable for corporate events or as a premium gift.',
+                category: 'wallets-purses',
+                isNew: false
+            },
+            // Clocks (general category for table/wall clocks)
+            {
+                id: 'prod-031',
+                name: 'Digital Table Clock',
+                code: 'NGA-031',
+                imageUrl: 'https://picsum.photos/id/230/200/200', // Square
+                price: 600.00,
+                description: 'Modern digital table clock with alarm and temperature display. Great for office desks.',
+                category: 'clocks',
+                isNew: true
+            },
+            {
+                id: 'prod-032',
+                name: 'Classic Wall Clock',
+                code: 'NGA-032',
+                imageUrl: 'https://picsum.photos/id/231/300/300', // Square
+                price: 1200.00,
+                description: 'Large, elegant wall clock with a minimalist design, ideal for corporate offices.',
+                category: 'clocks',
+                isNew: false
+            }
+        ];
+
+        // DOM Elements
+        const productCardsContainer = document.getElementById('product-cards-container');
+        const productCountElement = document.getElementById('product-count');
+        const categoryCheckboxes = document.querySelectorAll('.category-checkbox');
+        const loadingMessage = document.getElementById('loading-message'); // This will now be empty or removed
+
+        // Modal elements
+        const productModal = document.getElementById('product-modal');
+        const closeModalBtn = document.getElementById('close-modal');
+        const modalImage = document.getElementById('modal-image');
+        const modalTitle = document.getElementById('modal-title');
+        const modalDescription = document.getElementById('modal-description');
+        const modalCode = document.getElementById('modal-code');
+        const modalCategory = document.getElementById('modal-category');
+        const modalPrice = document.getElementById('modal-price');
+        const modalContent = productModal.querySelector('div > div');
+        const enquireButton = document.getElementById('enquire-button'); // New element for the enquire button
+
+        // Store current product for WhatsApp inquiry
+        let currentProductForInquiry = null;
+
+        // Function to render product cards
+        const renderProductCards = (productsToRender) => {
+            productCardsContainer.innerHTML = ''; // Clear existing cards
+            if (productsToRender.length === 0) {
+                productCardsContainer.innerHTML = '<p class="col-span-full text-center text-gray-500">No products found for the selected filters.</p>';
+                productCountElement.textContent = 0;
+                return;
+            }
+
+            productsToRender.forEach(product => {
+                const card = document.createElement('div');
+                card.className = 'product-card bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-all duration-300';
+                card.dataset.category = product.category;
+                card.dataset.id = product.id; // Still useful for unique identification if needed
+
+                // Use a fallback image if imageUrl is missing or invalid
+                const imageUrl = product.imageUrl && product.imageUrl.startsWith('http') ? product.imageUrl : 'https://placehold.co/250x300/E0E7FF/3B82F6?text=No+Image';
+
+                card.innerHTML = `
+                    <div class="relative bg-gray-50 flex justify-center items-center h-72 cursor-pointer product-details-trigger">
+                        <img src="${imageUrl}" alt="${product.name}" class="max-h-full max-w-full object-contain rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/250x300/E0E7FF/3B82F6?text=Image+Error';">
+                        ${product.isNew ? `<div class="absolute top-3 right-3 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">NEW</div>` : ''}
+                    </div>
+                    <div class="p-4 cursor-pointer product-details-trigger">
+    <h3 class="text-lg font-bold text-gray-800 leading-tight">${product.name}</h3> <!-- Smaller font, leading-tight for better spacing -->
+    <span class="block text-xs text-blue-600 font-semibold mt-1">${product.code}</span> <!-- Block display for new line, smaller font -->
+    <p class="text-gray-600 text-sm mb-3 product-description">${product.description}</p>
+    <p class="text-gray-500 text-xs product-category-text">Category: ${product.category}</p>
+    <p class="text-gray-800 text-lg mt-3">Price: <span class="font-bold text-blue-600">₹${typeof product.price === 'number' ? product.price.toFixed(2) : 'N/A'}</span></p>
+</div>
+                    <div class="p-4 pt-0 flex justify-between space-x-2"> <!-- Added flex and space-x-2 for side-by-side buttons -->
+                        <button class="book-now-button flex-1 btn-primary text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+                            Book Now
+                        </button>
+                        <button class="contact-us-button flex-1 btn-secondary text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+                            Contact Us
+                        </button>
+                    </div>
+                `;
+                productCardsContainer.appendChild(card);
+
+                // Add click listener for the "Book Now" button
+                const bookNowButton = card.querySelector('.book-now-button');
+                bookNowButton.addEventListener('click', () => {
+                    const phoneNumber = '919198471111'; // Replace with your actual WhatsApp number (e.g., 919876543210)
+                    const message = `Hello, I would like to place an order for *Product Title:* ${product.name} *Product Code:* ${product.code} with Quantity=`;
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                });
+
+                // Add click listener for the "Contact Us" button
+                const contactUsButton = card.querySelector('.contact-us-button');
+                contactUsButton.addEventListener('click', () => {
+                    const phoneNumber = '919198471111'; // Replace with your actual WhatsApp number (e.g., 919876543210)
+                    const message = `Hello, I would like to inquire about your corporate gifting solutions.`;
+                    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                    window.open(whatsappUrl, '_blank');
+                });
+
+
+                // Add click listener for modal (on image/details area)
+                const productDetailsTriggers = card.querySelectorAll('.product-details-trigger');
+                productDetailsTriggers.forEach(trigger => {
+                    trigger.addEventListener('click', () => {
+                        openModal(product);
+                    });
+                });
+            });
+            productCountElement.textContent = productsToRender.length;
+        };
+
+        // Function to filter and update product display
+        const filterProducts = () => {
+            const selectedCategories = Array.from(categoryCheckboxes)
+                .filter(cb => cb.checked)
+                .map(cb => cb.value);
+
+            const filteredProducts = allProducts.filter(product => {
+                return selectedCategories.length === 0 || selectedCategories.includes(product.category);
+            });
+            renderProductCards(filteredProducts);
+        };
+
+        // Initial render of all products when the page loads
+        document.addEventListener('DOMContentLoaded', () => {
+            filterProducts(); // Render all products initially
+        });
+
+        // Add change listener for category checkboxes
+        categoryCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', filterProducts);
+        });
+
+        // Function to open the modal
+        const openModal = (product) => {
+            currentProductForInquiry = product; // Store the product for the WhatsApp button
+
+            modalImage.src = product.imageUrl && product.imageUrl.startsWith('http') ? product.imageUrl : 'https://placehold.co/250x300/E0E7FF/3B82F6?text=No+Image';
+            modalImage.onerror = () => { modalImage.src = 'https://placehold.co/250x300/E0E7FF/3B82F6?text=Image+Error'; };
+            modalTitle.textContent = product.name;
+            modalDescription.textContent = product.description;
+            modalCode.textContent = product.code;
+            modalCategory.textContent = product.category;
+            modalPrice.textContent = `₹${typeof product.price === 'number' ? product.price.toFixed(2) : 'N/A'}`;
+
+            productModal.classList.remove('hidden');
+            modalContent.classList.remove('modal-content-exit-active', 'modal-content-exit');
+            modalContent.classList.add('modal-content-enter-active');
+        };
+
+        // Function to close the modal
+        const closeModal = () => {
+            modalContent.classList.remove('modal-content-enter-active');
+            modalContent.classList.add('modal-content-exit-active');
+            setTimeout(() => {
+                productModal.classList.add('hidden');
+                modalContent.classList.remove('modal-content-exit-active');
+                modalContent.classList.add('modal-content-enter'); // Reset for next open
+                currentProductForInquiry = null; // Clear stored product
+            }, 300); // Match transition duration
+        };
+
+        // Add click listener to close button
+        closeModalBtn.addEventListener('click', closeModal);
+
+        // Close modal when clicking outside the content area
+        productModal.addEventListener('click', (e) => {
+            if (e.target === productModal) {
+                closeModal();
+            }
+        });
+
+        // Handle Enquire Now button click (in modal)
+        enquireButton.addEventListener('click', () => {
+            if (currentProductForInquiry) {
+                const phoneNumber = '919198471111'; // Replace with your actual WhatsApp number (e.g., 919876543210)
+                const message = `Hello, I would like to place an order for *Product Title:* ${currentProductForInquiry.name} *Product Code:* ${currentProductForInquiry.code} with Quantity=`;
+                const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            } else {
+                console.warn("No product selected for inquiry.");
+            }
+        });
+    </script>
+</body>
+</html>
