@@ -4,26 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New Graphic Arts - Corporate Gifts for Every Occasion</title>
-    <!-- SEO Meta Tags -->
     <meta name="description" content="New Graphic Arts: Your premier destination for corporate gifts and personalized gifting solutions for every occasion imaginable. From eco-friendly items to tech gadgets, apparel, gift sets, and more.">
     <meta name="keywords" content="corporate gifts, personalized gifts, custom gifts, business gifts, corporate gifting, gift sets, eco-friendly gifts, tech gadgets, branded apparel, desk accessories, premium drinkware, custom hampers, calendars, pens, keyrings, bags, t-shirts, caps, diaries, wallets, purses, clocks, New Graphic Arts, gifts for every occasion">
     <meta name="author" content="New Graphic Arts">
 
-    <!-- Open Graph / Social Media Tags -->
     <meta property="og:title" content="New Graphic Arts - Corporate Gifts for Every Occasion">
     <meta property="og:description" content="New Graphic Arts: Your premier destination for corporate gifts and personalized gifting solutions for every occasion imaginable. From eco-friendly items to tech gadgets, apparel, gift sets, and more.">
-    <meta property="og:image" content="https://placehold.co/1200x630/E0E7FF/3B82F6?text=New+Graphic+Arts+Gifts"> <!-- Replace with your actual logo/banner image URL -->
-    <meta property="og:url" content="YOUR_WEBSITE_URL_HERE"> <!-- IMPORTANT: Replace with your actual website URL -->
-    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://placehold.co/1200x630/E0E7FF/3B82F6?text=New+Graphic+Arts+Gifts"> <meta property="og:url" content="YOUR_WEBSITE_URL_HERE"> <meta property="og:type" content="website">
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         /* Custom font for better aesthetics */
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #F8FAFC; /* Lighter, more elegant background */
+            background-color: #FFFFFF; /* Lighter, more elegant background */
             color: #333; /* Default text color */
         }
         /* Custom checkbox styling for a more refined look */
@@ -31,7 +26,7 @@
             background-color: #1D4ED8; /* Deeper blue */
             border-color: #1D4ED8;
         }
-        
+
         .form-checkbox {
             border-radius: 0.25rem; /* rounded-sm */
             border-width: 1px;
@@ -105,22 +100,15 @@
             transform: translateY(-2px);
         }
     </style>
-    <!-- Schema.org Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "New Graphic Arts",
       "image": "https://placehold.co/800x450/E0E7FF/3B82F6?text=New+Graphic+Arts+Logo",
-      "url": "YOUR_WEBSITE_URL_HERE", <!-- IMPORTANT: Replace with your actual website URL -->
-      "telephone": "+91XXXXXXXXXX", <!-- Replace with your actual phone number -->
-      "address": {
+      "url": "YOUR_WEBSITE_URL_HERE", "telephone": "+91XXXXXXXXXX", "address": {
         "@type": "PostalAddress",
-        "streetAddress": "Your Street Address", <!-- Replace with your actual street address -->
-        "addressLocality": "Your City", <!-- Replace with your actual city -->
-        "addressRegion": "Your State", <!-- Replace with your actual state -->
-        "postalCode": "Your Postal Code", <!-- Replace with your actual postal code -->
-        "addressCountry": "IN"
+        "streetAddress": "Your Street Address", "addressLocality": "Your City", "addressRegion": "Your State", "postalCode": "Your Postal Code", "addressCountry": "IN"
       },
       "priceRange": "₹₹",
       "slogan": "HUM BANATE HAI APKE LIYE APKE APNO KE LIYE - We create gifts for every occasion you can imagine",
@@ -239,15 +227,15 @@
     </script>
 </head>
 <body class="p-4 sm:p-6 md:p-8">
-    <div class="max-w-7xl mx-auto bg-white p-6 rounded-2xl shadow-2xl border border-gray-100">
-        <!-- Brand Header -->
+<div>
         <header class="text-center mb-10 pb-6 border-b border-gray-200">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2 tracking-tight leading-tight">New Graphic Arts</h1>
-            <p class="text-lg sm:text-xl text-blue-700 font-medium italic leading-relaxed">HUM BANATE HAI APKE LIYE APKE APNO KE LIYE</p>
-            <p class="text-md text-gray-600 mt-3">We create gifts for every occasion you can imagine. Your Partner in Premium Corporate Gifting Solutions.</p>
+           <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-4">
+    <img src="https://i.postimg.cc/B6zDkGLb/4.png" alt="New Graphic Arts" class="h-24 sm:h-32 object-contain">
+    <img src="https://i.postimg.cc/hjvT2GGN/3.png" alt="New Graphic Arts" class="h-16 sm:h-20 object-contain">
+</div>
+<img src="https://i.postimg.cc/7Zr1qDBT/1.png" alt="New Graphic Arts Tag Line" class="h-16 sm:h-20 mx-auto mb-4 object-contain">
         </header>
 
-        <!-- Filter Section: Categories and Product Count -->
         <div class="mb-10 pb-6 border-b border-gray-200">
             <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
                 <div class="mb-6 md:mb-0">
@@ -310,14 +298,11 @@
             </div>
         </div>
 
-        <!-- Product Cards Section -->
-        <div id="product-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-            <!-- Product cards will be dynamically loaded here -->
+        <div id="product-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
             <div class="col-span-full text-center text-gray-500" id="loading-message"></div>
         </div>
     </div>
 
-    <!-- Product Detail Modal -->
     <div id="product-modal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
         <div class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-2xl relative modal-content-enter">
             <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold leading-none">&times;</button>
@@ -356,7 +341,7 @@
                 id: 'prod-002',
                 name: 'Wireless Charging Pad',
                 code: 'NGA-002',
-                imageUrl: 'https://i.postimg.cc/P5V5Hbg8/OK-CATLOUGE-2026-page-0008.jpg', // Landscape
+                imageUrl: 'https://storage.googleapis.com/appmachine-docs/assets/ef424c3e-9cf5-4312-938f-25645cffd0af.jpeg', // Landscape
                 price: 1299.50,
                 description: 'Fast and convenient charging for all compatible devices. A sleek and modern tech gadget that will be appreciated by any professional.',
                 category: 'tech-gadgets',
@@ -681,7 +666,7 @@
         const productCardsContainer = document.getElementById('product-cards-container');
         const productCountElement = document.getElementById('product-count');
         const categoryCheckboxes = document.querySelectorAll('.category-checkbox');
-        const loadingMessage = document.getElementById('loading-message'); // This will now be empty or removed
+        const loadingMessage = document.getElementById('loading-message');
 
         // Modal elements
         const productModal = document.getElementById('product-modal');
@@ -693,7 +678,7 @@
         const modalCategory = document.getElementById('modal-category');
         const modalPrice = document.getElementById('modal-price');
         const modalContent = productModal.querySelector('div > div');
-        const enquireButton = document.getElementById('enquire-button'); // New element for the enquire button
+        const enquireButton = document.getElementById('enquire-button');
 
         // Store current product for WhatsApp inquiry
         let currentProductForInquiry = null;
@@ -722,13 +707,13 @@
                         ${product.isNew ? `<div class="absolute top-3 right-3 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">NEW</div>` : ''}
                     </div>
                     <div class="p-4 cursor-pointer product-details-trigger">
-    <h3 class="text-lg font-bold text-gray-800 leading-tight">${product.name}</h3> <!-- Smaller font, leading-tight for better spacing -->
-    <span class="block text-xs text-blue-600 font-semibold mt-1">${product.code}</span> <!-- Block display for new line, smaller font -->
+    <h3 class="text-lg font-bold text-gray-800 leading-tight">${product.name}</h3>
+    <span class="block text-xs text-blue-600 font-semibold mt-1">${product.code}</span>
     <p class="text-gray-600 text-sm mb-3 product-description">${product.description}</p>
     <p class="text-gray-500 text-xs product-category-text">Category: ${product.category}</p>
     <p class="text-gray-800 text-lg mt-3">Price: <span class="font-bold text-blue-600">₹${typeof product.price === 'number' ? product.price.toFixed(2) : 'N/A'}</span></p>
 </div>
-                    <div class="p-4 pt-0 flex justify-between space-x-2"> <!-- Added flex and space-x-2 for side-by-side buttons -->
+                    <div class="p-4 pt-0 flex justify-between space-x-2">
                         <button class="book-now-button flex-1 btn-primary text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
                             Book Now
                         </button>
@@ -762,7 +747,10 @@
                 const productDetailsTriggers = card.querySelectorAll('.product-details-trigger');
                 productDetailsTriggers.forEach(trigger => {
                     trigger.addEventListener('click', () => {
-                        openModal(product);
+                        // Check if the device is not mobile (e.g., screen width > 768px for md breakpoint)
+                        if (window.innerWidth >= 768) {
+                            openModal(product);
+                        }
                     });
                 });
             });
@@ -826,6 +814,13 @@
         // Close modal when clicking outside the content area
         productModal.addEventListener('click', (e) => {
             if (e.target === productModal) {
+                closeModal();
+            }
+        });
+
+        // Add keyboard listener for 'Escape' key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !productModal.classList.contains('hidden')) {
                 closeModal();
             }
         });
