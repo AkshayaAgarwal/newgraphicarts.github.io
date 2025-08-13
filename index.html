@@ -259,7 +259,7 @@
                         </label>
                         <label class="inline-flex items-center cursor-pointer">
                             <input type="checkbox" class="form-checkbox category-checkbox" value="drinkware">
-                            <span class="ml-2 text-base font-medium">Premium Drinkware</span>
+                            <span class="ml-2 text-base font-medium">Bottle/Water-Bottles</span>
                         </label>
                         <label class="inline-flex items-center cursor-pointer">
                             <input type="checkbox" class="form-checkbox category-checkbox" value="custom-hampers">
@@ -307,7 +307,7 @@
         <div class="bg-white rounded-xl shadow-2xl p-8 w-full max-w-2xl relative modal-content-enter">
             <button id="close-modal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 text-3xl font-bold leading-none">&times;</button>
             <div class="flex flex-col md:flex-row gap-8">
-                <div class="md:w-1/2 flex justify-center items-center bg-gray-50 rounded-lg p-4">
+                <div class="md:w-1/2 flex justify-center items-center rounded-lg p-4">
                     <img id="modal-image" src="" alt="Product Image" class="max-h-80 max-w-full object-contain rounded-lg shadow-md">
                 </div>
                 <div class="md:w-1/2">
@@ -327,6 +327,7 @@
     <script type="module">
         // Product data defined locally as a JavaScript array
         const allProducts = [
+             // Bags
             {
                 id: 'prod-001',
                 name: 'Allen Solly',
@@ -518,18 +519,216 @@
                 category: 'bags',
                 isNew: true
             },
+            //JISixty
             {
-                id: 'prod-002',
-                name: 'Wireless Charging Pad',
-                code: 'NGA-002',
-                imageUrl: '', // Landscape
-                price: 1299.50,
-                description: 'Fast and convenient charging for all compatible devices. A sleek and modern tech gadget that will be appreciated by any professional.',
-                category: 'tech-gadgets',
+                id: 'prod-020',
+                name: 'Wall Clock Lufthansa',
+                code: 'JI-27',
+                imageUrl: 'https://i.postimg.cc/5yv2YTQ3/27.jpg', // Landscape
+                price: 480.00,
+                description: 'Dimensions : 11.75" Round, Dial Size : 11.5" Round',
+                category: 'clocks',
                 isNew: false
             },
             {
-                id: 'prod-003',
+                id: 'prod-021',
+                name: 'Wall Clock PayZapp',
+                code: 'JI-28',
+                imageUrl: 'https://i.postimg.cc/8PRC18Sk/29.jpg', // Landscape
+                price: 540.00,
+                description: 'Dimensions : 11.75"x11.75", Dial Size : 11.16"x11.16"',
+                category: 'clocks',
+                isNew: false
+            },
+            {
+                id: 'prod-022',
+                name: 'Wall Clock Swastik',
+                code: 'JI-29',
+                imageUrl: 'https://i.postimg.cc/8kr50JX6/67.jpg', // Landscape
+                price: 401.00,
+                description: 'Dimensions : 10" Round, Dial Size : 9.125" Round',
+                category: 'clocks',
+                isNew: false
+            },
+            {
+                id: 'prod-023',
+                name: 'Wall Clock (3D Numbers) Diya',
+                code: 'JI-30',
+                imageUrl: 'https://i.postimg.cc/T3T31kdV/80.jpg', // Landscape
+                price: 442.00,
+                description: 'Dimensions : 8"x11.25", Dial Size : 7.61"x10.72"',
+                category: 'clocks',
+                isNew: false
+            },
+            {
+                id: 'prod-024',
+                name: 'Wall Clock Nirvana',
+                code: 'JI-31',
+                imageUrl: 'https://i.postimg.cc/DykZkvRY/106.jpg', // Landscape
+                price: 300.00,
+                description: 'Dimensions : 9" Round, Dial Size : 8.19 Round"',
+                category: 'clocks',
+                isNew: false
+            },
+            {
+                id: 'prod-025',
+                name: 'Wall Clock (cum table clock) Diamount',
+                code: 'JI-32',
+                imageUrl: 'https://i.postimg.cc/BnNQKxbd/113.jpg', // Landscape
+                price: 252.00,
+                description: 'Dimensions : 6.5" Round, Dial Size : 5.57" Round',
+                category: 'clocks',
+                isNew: false
+            },
+            {
+                id: 'prod-026',
+                name: 'Wall Clock (cum table clock) Zydus',
+                code: 'JI-33',
+                imageUrl: 'https://i.postimg.cc/25KkHr4G/114.jpg', // Landscape
+                price: 252.00,
+                description: 'Dimensions : 6.5" Round, Dial Size : 5.57" Round',
+                category: 'clocks',
+                isNew: false
+            },
+            {
+                id: 'prod-027',
+                name: 'Wall Clock (cum table clock) Evara',
+                code: 'JI-34',
+                imageUrl: 'https://i.postimg.cc/Jhn7cGBt/136.jpg', // Landscape
+                price: 215.00,
+                description: 'Dimensions :8"x4.5", Dial Size : 7.1"X3.54"',
+                category: 'clocks',
+                isNew: false
+            },
+             {
+                id: 'prod-028',
+                name: 'Inner Steel Sipper Bottle Hydro',
+                code: 'JI-35(WB4A)',
+                imageUrl: 'https://i.postimg.cc/VNMGhFth/WB4A.jpg', // Landscape
+                price: 384.00,
+                description: 'Sipper Bottle Hydro 600 ML-Black',
+                category: 'drinkware',
+                isNew: false
+            },
+             {
+                id: 'prod-029',
+                name: 'Inner Steel Sipper Bottle Hydro Zepto',
+                code: 'JI-35(WB4B)',
+                imageUrl: 'https://i.postimg.cc/SsfZSND7/WB4B.jpg', // Landscape
+                price: 384.00,
+                description: 'Sipper Bottle Hydro 600 ML-Blue',
+                category: 'drinkware',
+                isNew: false
+            },
+            {
+                id: 'prod-030',
+                name: 'Inner Steel Sipper Bottle Hydro Wallmax',
+                code: 'JI-35(WB4c)',
+                imageUrl: 'https://i.postimg.cc/66zHFq7B/WB4C.jpg', // Landscape
+                price: 384.00,
+                description: 'Sipper Bottle Hydro 600 ML-Orange',
+                category: 'drinkware',
+                isNew: false
+            },
+           
+             {
+                id: 'prod-031',
+                name: 'SS Bottle (1000ml) Dome Jeep',
+                code: 'JI-36(SS1)',
+                imageUrl: 'https://i.postimg.cc/P50VK7CZ/SS-1.jpg', // Landscape
+                price: 355.00,
+                description: ' Stainless Steel Bottle 1000ml-Green',
+                category: 'drinkware',
+                isNew: false
+            },
+              {
+                id: 'prod-032',
+                name: 'SS Bottle (1000ml) Dome Samsung',
+                code: 'JI-36(SS2)',
+                imageUrl: 'https://i.postimg.cc/MTSPJjbp/SS2.jpg', // Landscape
+                price: 355.00,
+                description: ' Stainless Steel Bottle 1000ml-Black ',
+                category: 'drinkware',
+                isNew: false
+            },
+             {
+                id: 'prod-031',
+                name: 'SS Bottle (1000ml) Cubix Max',
+                code: 'JI-37(SS5)',
+                imageUrl: 'https://i.postimg.cc/sxfTvdLF/SS-5.jpg', // Landscape
+                price: 335.00,
+                description: ' Stainless Steel Bottle 1000ml',
+                category: 'drinkware',
+                isNew: false
+            },
+
+        //Diwali 3Sixty fir
+             {
+                id: 'prod-032',
+                name: 'Table Clock Royal Enfiled',
+                code: '3Sixty-15',
+                imageUrl: 'https://i.postimg.cc/d1R4ntCZ/royal.jpg', // Landscape
+                price: 276.00,
+                description: 'Colours: Gold/Silver/Rose Size : 6"x6"',
+                category: 'clocks',
+                isNew: false
+            },
+             {
+                id: 'prod-033',
+                name: 'Table Clock tesla',
+                code: '3Sixty-16',
+                imageUrl: 'https://i.postimg.cc/Kzh0ng1y/tesla.jpg', // Landscape
+                price: 276.00,
+                description: 'Colours: Gold/Silver/Rose Size : 6" Round',
+                category: 'clocks',
+                isNew: false
+            },
+             {
+                id: 'prod-034',
+                name: 'Table Desk Revolving GNC',
+                code: '3Sixty-17',
+                imageUrl: 'https://i.postimg.cc/y85Q8GBx/GNC.jpg', // Landscape
+                price: 300.00,
+                description: 'Size 3.75"x3.75, Priting size :0.75"x2.75" (Branding on 4 sides)',
+                category: 'desk-accessories',
+                isNew: false
+            },
+            
+            {
+                id: 'prod-036',
+                name: ' Table Desk 3 Glass Holder Zoho',
+                code: '3Sixty-18',
+                imageUrl: 'https://i.postimg.cc/VvD4QGDY/Zoho.jpg', // Landscape
+                price: 360.00,
+                description: 'Size : 3.75"x9.75" Printing size: 0.75"x2.75"',
+                category: 'desk-accessories',
+                isNew: false
+            },
+             {
+                id: 'prod-035',
+                name: ' Wall Clock JW Marriot',
+                code: '3Sixty-19',
+                imageUrl: 'https://i.postimg.cc/hGdCz0Pr/JW.jpg', // Landscape
+                price: 372.00,
+                description: 'Colours: Gold/Silver/Rose Size : 9.75"x 9.75" ',
+                category: 'clocks',
+                isNew: false
+            },
+             {
+                id: 'prod-036',
+                name: ' Wall Clock Third Wave Coffee',
+                code: '3Sixty-20',
+                imageUrl: 'https://i.postimg.cc/J01KFV36/TWC.jpg', // Landscape
+                price: 336.00,
+                description: 'Colours: Gold/Silver/Rose Size : 9" Round ',
+                category: 'clocks',
+                isNew: false
+            },
+ 
+
+            
+            {
+                id: 'prod-0',
                 name: 'Branded Polo T-Shirt',
                 code: 'NGA-003',
                 imageUrl: 'https://i.postimg.cc/bwww4VBh/OK-CATLOUGE-2026-page-0009.jpg',
@@ -548,26 +747,7 @@
                 category: 'desk-accessories',
                 isNew: false
             },
-            {
-                id: 'prod-005',
-                name: 'Stainless Steel Water Bottle',
-                code: 'NGA-005',
-                imageUrl: 'https://picsum.photos/id/204/250/300',
-                price: 550.00,
-                description: 'Durable and stylish, ideal for daily hydration. A practical and eco-friendly gift that promotes health and wellness.',
-                category: 'drinkware',
-                isNew: false
-            },
-            {
-                id: 'prod-006',
-                name: 'Gourmet Coffee Hamper',
-                code: 'NGA-006',
-                imageUrl: 'https://picsum.photos/id/205/250/300',
-                price: 1800.00,
-                description: 'A delightful selection of premium coffees and treats. Perfect for a luxurious corporate gift or a special appreciation gesture.',
-                category: 'custom-hampers',
-                isNew: true
-            },
+           
             {
                 id: 'prod-007',
                 name: 'Smart Bluetooth Speaker',
@@ -586,16 +766,6 @@
                 price: 999.00,
                 description: 'Premium quality leather, customizable with initials. A timeless and elegant gift that adds a personal touch.',
                 category: 'wallets-purses', // Changed category
-                isNew: false
-            },
-            {
-                id: 'prod-009',
-                name: 'Custom Branded Backpack',
-                code: 'NGA-009',
-                imageUrl: 'https://picsum.photos/id/208/250/350', // Taller portrait
-                price: 1500.00,
-                description: 'Spacious and durable, ideal for daily commute or travel. Perfect for employees or clients who are always on the move.',
-                category: 'bags', // Changed category
                 isNew: false
             },
             {
@@ -652,27 +822,6 @@
                 category: 'gift-sets',
                 isNew: false
             },
-            // Bottles (Drinkware already exists, but adding more specific 'bottles')
-            {
-                id: 'prod-015',
-                name: 'Smart Temperature Bottle',
-                code: 'NGA-015',
-                imageUrl: 'https://picsum.photos/id/214/200/300',
-                price: 950.00,
-                description: 'Insulated bottle with LED temperature display. Keeps drinks hot or cold for hours.',
-                category: 'drinkware', // Using existing drinkware category
-                isNew: true
-            },
-            {
-                id: 'prod-016',
-                name: 'Custom Engraved Glass Bottle',
-                code: 'NGA-016',
-                imageUrl: 'https://picsum.photos/id/215/220/280',
-                price: 700.00,
-                description: 'Elegant glass bottle, perfect for custom engraving with company logos or names.',
-                category: 'drinkware',
-                isNew: false
-            },
             // Pens (Desk Accessories already exists, adding more specific 'pens')
             {
                 id: 'prod-017',
@@ -715,27 +864,9 @@
                 category: 'keyrings',
                 isNew: false
             },
-            // Bags
-            {
-                id: 'prod-021',
-                name: 'Laptop Messenger Bag',
-                code: 'NGA-021',
-                imageUrl: 'https://picsum.photos/id/220/300/250',
-                price: 2200.00,
-                description: 'Spacious and padded messenger bag designed to protect laptops and carry essentials.',
-                category: 'bags',
-                isNew: false
-            },
-            {
-                id: 'prod-022',
-                name: 'Eco-Friendly Tote Bag',
-                code: 'NGA-022',
-                imageUrl: 'https://picsum.photos/id/221/250/300',
-                price: 450.00,
-                description: 'Reusable tote bag made from sustainable materials, customizable with your brand.',
-                category: 'bags',
-                isNew: true
-            },
+           
+            
+          
             // T-shirts (Apparel already exists, adding more specific 't-shirts')
             {
                 id: 'prod-023',
@@ -821,26 +952,6 @@
                 isNew: false
             },
             // Clocks (general category for table/wall clocks)
-            {
-                id: 'prod-031',
-                name: 'Digital Table Clock',
-                code: 'NGA-031',
-                imageUrl: 'https://picsum.photos/id/230/200/200', // Square
-                price: 600.00,
-                description: 'Modern digital table clock with alarm and temperature display. Great for office desks.',
-                category: 'clocks',
-                isNew: true
-            },
-            {
-                id: 'prod-032',
-                name: 'Classic Wall Clock',
-                code: 'NGA-032',
-                imageUrl: 'https://picsum.photos/id/231/300/300', // Square
-                price: 1200.00,
-                description: 'Large, elegant wall clock with a minimalist design, ideal for corporate offices.',
-                category: 'clocks',
-                isNew: false
-            }
         ];
 
         // DOM Elements
@@ -883,7 +994,7 @@
                 const imageUrl = product.imageUrl && product.imageUrl.startsWith('http') ? product.imageUrl : 'https://placehold.co/250x300/E0E7FF/3B82F6?text=No+Image';
 
                 card.innerHTML = `
-                    <div class="relative bg-gray-50 flex justify-center items-center h-72 cursor-pointer product-details-trigger">
+                    <div class="relative flex justify-center items-center h-72 cursor-pointer product-details-trigger">
                         <img src="${imageUrl}" alt="${product.name}" class="max-h-full max-w-full object-contain rounded-lg" onerror="this.onerror=null;this.src='https://placehold.co/250x300/E0E7FF/3B82F6?text=Image+Error';">
                         ${product.isNew ? `<div class="absolute top-3 right-3 bg-green-500 text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">NEW</div>` : ''}
                     </div>
