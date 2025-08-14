@@ -291,12 +291,25 @@
                         </label>
                     </div>
                 </div>
+                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
+        <div class="mb-6 md:mb-0">
+            <label class="block text-gray-700 text-lg font-bold mb-4">View or Download Documents:</label>
+            <div class="grid grid-cols-1 gap-y-3 gap-x-6 text-gray-700">
+                <a href="https://drive.google.com/drive/folders/1hRJ-qAZlbkJd6fqDRMc29Nmyg3VGuwIe?usp=drive_link" class="text-blue-600 hover:underline inline-flex items-center" target="_blank">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4 4a2 2 0 012-2h4.586A2 2 0 0113 2.586L15.414 5A2 2 0 0116 6.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 2h4v1H6V6zm0 3h8v1H6V9zm0 3h8v1H6v-1z" clip-rule="evenodd"></path></svg>
+                    <span class="text-base font-medium">All Products Brochure (PDF)</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
                 <div class="text-right mt-6 md:mt-0">
                     <p class="text-gray-700 text-md font-semibold">Total Products</p>
                     <p id="product-count" class="text-blue-700 text-4xl font-extrabold">0</p>
                 </div>
             </div>
         </div>
+
 
         <div id="product-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
             <div class="col-span-full text-center text-gray-500" id="loading-message"></div>
@@ -725,230 +738,125 @@
                 isNew: false
             },
  
-
-            
-            {
-                id: 'prod-0',
-                name: 'Branded Polo T-Shirt',
-                code: 'NGA-003',
-                imageUrl: 'https://i.postimg.cc/bwww4VBh/OK-CATLOUGE-2026-page-0009.jpg',
-                price: 750.00,
-                description: 'High-quality fabric with custom branding options. A comfortable and stylish apparel choice for your team or clients, perfect for corporate events.',
-                category: 'apparel',
-                isNew: false
-            },
-            {
-                id: 'prod-004',
-                name: 'Executive Pen Set',
-                code: 'NGA-004',
-                imageUrl: 'https://i.postimg.cc/PrhxQ5bN/OK-CATLOUGE-2026-page-0010.jpg', // Square
-                price: 899.00,
-                description: 'Elegant design, perfect for corporate executives. This premium pen set offers a smooth writing experience and a sophisticated look.',
-                category: 'desk-accessories',
-                isNew: false
-            },
-           
-            {
-                id: 'prod-007',
-                name: 'Smart Bluetooth Speaker',
-                code: 'NGA-007',
-                imageUrl: 'https://picsum.photos/id/206/300/250', // Slightly wider
-                price: 2499.00,
-                description: 'Portable audio with impressive sound quality. A high-tech gift that offers entertainment and convenience on the go.',
-                category: 'tech-gadgets',
-                isNew: false
-            },
-            {
-                id: 'prod-008',
-                name: 'Personalized Leather Wallet',
-                code: 'NGA-008',
-                imageUrl: 'https://picsum.photos/id/207/250/250', // Square
-                price: 999.00,
-                description: 'Premium quality leather, customizable with initials. A timeless and elegant gift that adds a personal touch.',
-                category: 'wallets-purses', // Changed category
-                isNew: false
-            },
-            {
-                id: 'prod-010',
-                name: 'Succulent Plant Pot',
-                code: 'NGA-010',
-                imageUrl: 'https://picsum.photos/id/209/200/300',
-                price: 350.00,
-                description: 'A touch of green for the office, easy to care for. A thoughtful and refreshing gift that brightens any workspace.',
-                category: 'eco-friendly',
-                isNew: true
-            },
-            // --- New Categories and Products ---
-
-            // Calendars
-            {
-                id: 'prod-011',
-                name: 'Desk Calendar 2025',
-                code: 'NGA-011',
-                imageUrl: 'https://picsum.photos/id/210/280/220', // Landscape
-                price: 250.00,
-                description: 'High-quality desk calendar for 2025 with custom branding options. Perfect for office use.',
-                category: 'calendars',
-                isNew: true
-            },
-            {
-                id: 'prod-012',
-                name: 'Wall Calendar Deluxe',
-                code: 'NGA-012',
-                imageUrl: 'https://picsum.photos/id/211/300/280', // Square-ish
-                price: 380.00,
-                description: 'Premium wall calendar with stunning visuals and ample space for notes. Ideal for corporate branding.',
-                category: 'calendars',
-                isNew: false
-            },
-            // Gift Sets
-            {
-                id: 'prod-013',
-                name: 'Executive Gift Set',
-                code: 'NGA-013',
-                imageUrl: 'https://picsum.photos/id/212/300/250',
-                price: 2500.00,
-                description: 'A luxurious gift set including a premium pen, diary, and cardholder. Elegantly packaged for corporate gifting.',
-                category: 'gift-sets',
-                isNew: true
-            },
-            {
-                id: 'prod-014',
-                name: 'Wellness Hamper',
-                code: 'NGA-014',
-                imageUrl: 'https://picsum.photos/id/213/280/280',
-                price: 1800.00,
-                description: 'Promote well-being with this hamper featuring organic teas, aromatherapy oils, and a stress-relief gadget.',
+            // Gift sets
+             {
+                id: 'prod-037',
+                name: 'Pen & Key chain set Bamboo',
+                code: 'GL-430',
+                imageUrl: 'https://i.postimg.cc/xT14TzkR/GL430.jpg', // Landscape
+                price: 165.00,
+                description: 'Pen and keyring gift set',
                 category: 'gift-sets',
                 isNew: false
             },
-            // Pens (Desk Accessories already exists, adding more specific 'pens')
-            {
-                id: 'prod-017',
-                name: 'Premium Rollerball Pen',
-                code: 'NGA-017',
-                imageUrl: 'https://picsum.photos/id/216/200/200',
-                price: 600.00,
-                description: 'Smooth writing rollerball pen with a sophisticated metallic finish. Ideal for corporate gifts.',
-                category: 'desk-accessories', // Using existing desk-accessories category
+             {
+                id: 'prod-038',
+                name: 'Pen & Key chain set GM',
+                code: 'GL-431',
+                imageUrl: 'https://i.postimg.cc/6pDj0bMj/GL431.jpg', // Landscape
+                price: 165.00,
+                description: 'Pen and keyring gift set',
+                category: 'gift-sets',
+                isNew: false
+            },
+             {
+                id: 'prod-038',
+                name: 'Pen & Key chain set Black',
+                code: 'GL-436',
+                imageUrl: 'https://i.postimg.cc/XJgsnj4m/GL436.jpg', // Landscape
+                price: 190.00,
+                description: 'Pen and keyring gift set',
+                category: 'gift-sets',
+                isNew: false
+            },
+              {
+                id: 'prod-039',
+                name: 'Black Tumbler DBL Decker 6 in one set',
+                code: 'GL-2657',
+                imageUrl: 'https://i.postimg.cc/2SvFzkxG/GL2657.jpg', // Landscape
+                price: 2175.00,
+                description: 'Exclusive Corporate Gift set',
+                category: 'gift-sets',
                 isNew: false
             },
             {
-                id: 'prod-018',
-                name: 'Stylus Pen with Logo',
-                code: 'NGA-018',
-                imageUrl: 'https://picsum.photos/id/217/250/180', // Landscape
-                price: 300.00,
-                description: 'Dual-function pen with a stylus tip, perfect for touchscreens. Customizable with your brand logo.',
-                category: 'desk-accessories',
+                id: 'prod-040',
+                name: 'Wooden Bamboo gift set 4 in one set',
+                code: 'GL-2605',
+                imageUrl: 'https://i.postimg.cc/GpFQjL8t/GL2605.jpg', // Landscape
+                price: 1275.00,
+                description: 'Exclusive Corporate Gift set',
+                category: 'gift-sets',
                 isNew: false
             },
-            // Keyrings
-            {
-                id: 'prod-019',
-                name: 'Leather Keyring with Engraving',
-                code: 'NGA-019',
-                imageUrl: 'https://picsum.photos/id/218/200/200',
-                price: 180.00,
-                description: 'Stylish leather keyring, can be engraved with company initials or a short message.',
-                category: 'keyrings',
-                isNew: true
-            },
-            {
-                id: 'prod-020',
-                name: 'Metal Logo Keyring',
-                code: 'NGA-020',
-                imageUrl: 'https://picsum.photos/id/219/220/220',
-                price: 150.00,
-                description: 'Durable metal keyring, perfect for showcasing your company logo in a compact form.',
-                category: 'keyrings',
-                isNew: false
-            },
-           
-            
-          
-            // T-shirts (Apparel already exists, adding more specific 't-shirts')
-            {
-                id: 'prod-023',
-                name: 'Custom Dry-Fit T-Shirt',
-                code: 'NGA-023',
-                imageUrl: 'https://picsum.photos/id/222/250/300',
-                price: 650.00,
-                description: 'Comfortable dry-fit t-shirt, ideal for sports events or casual corporate wear.',
-                category: 'apparel', // Using existing apparel category
+             {
+                id: 'prod-041',
+                name: 'Black Gold gift set 4 in one set',
+                code: 'GL-2650',
+                imageUrl: 'https://i.postimg.cc/fTVfrjt6/GL2650.jpg', // Landscape
+                price: 1025.00,
+                description: 'Exclusive Corporate Gift set',
+                category: 'gift-sets',
                 isNew: false
             },
             {
-                id: 'prod-024',
-                name: 'Premium Cotton T-Shirt',
-                code: 'NGA-024',
-                imageUrl: 'https://picsum.photos/id/223/250/300',
-                price: 580.00,
-                description: 'Soft and breathable cotton t-shirt, perfect for everyday branding.',
-                category: 'apparel',
+                id: 'prod-042',
+                name: 'Steel Mirror',
+                code: 'GL-2620',
+                imageUrl: 'https://i.postimg.cc/Qtjq421b/GL2620.jpg', // Landscape
+                price: 925.00,
+                description: 'Exclusive Corporate Gift set',
+                category: 'gift-sets',
                 isNew: false
             },
-            // Caps
             {
-                id: 'prod-025',
-                name: 'Branded Sports Cap',
-                code: 'NGA-025',
-                imageUrl: 'https://picsum.photos/id/224/250/200', // Landscape
-                price: 320.00,
-                description: 'Adjustable sports cap with space for embroidered or printed logos.',
-                category: 'apparel', // Using apparel category
-                isNew: true
-            },
-            {
-                id: 'prod-026',
-                name: 'Classic Baseball Cap',
-                code: 'NGA-026',
-                imageUrl: 'https://picsum.photos/id/225/200/200', // Square
-                price: 280.00,
-                description: 'Timeless baseball cap design, available in various colors for custom branding.',
-                category: 'apparel',
-                isNew: false
-            },
-            // Diaries
-            {
-                id: 'prod-027',
-                name: 'Executive PU Leather Diary',
-                code: 'NGA-027',
-                imageUrl: 'https://picsum.photos/id/226/250/300',
+                id: 'prod-041',
+                name: 'Wooden gift set 4 in one combo set',
+                code: 'GL-2551',
+                imageUrl: 'https://i.postimg.cc/5Nrn4kW4/GL2551.jpg', // Landscape
                 price: 700.00,
-                description: 'High-quality PU leather diary with ample pages for notes and planning.',
-                category: 'desk-accessories', // Using desk-accessories category
+                description: 'Exclusive Corporate Gift set',
+                category: 'gift-sets',
+                isNew: false
+            },
+               {
+                id: 'prod-042',
+                name: 'Bamboo pen and card set',
+                code: 'GL-2017',
+                imageUrl: 'https://i.postimg.cc/QN0fPd6W/GL2017.jpg', // Landscape
+                price: 300.00,
+                description: 'Exclusive Corporate Gift set',
+                category: 'gift-sets',
+                isNew: false
+            },
+              {
+                id: 'prod-043',
+                name: 'Black/Grey/Gold Set Pen/Keychain/Notebook set',
+                code: 'GL-631',
+                imageUrl: 'https://i.postimg.cc/N0c8F3Jc/GL631.jpg', // Landscape
+                price: 575.00,
+                description: 'Exclusive Corporate Gift set',
+                category: 'gift-sets',
+                isNew: false
+            },
+              {
+                id: 'prod-044',
+                name: 'Full Fold Steel Mirror finish Mobile Stand',
+                code: 'ST-94',
+                imageUrl: '', // Landscape
+                price: 325.00,
+                description: 'Exclusive Corporate Gift',
+                category: 'gift-sets',
                 isNew: false
             },
             {
-                id: 'prod-028',
-                name: 'Customized A5 Notebook Diary',
-                code: 'NGA-028',
-                imageUrl: 'https://picsum.photos/id/227/250/300',
-                price: 400.00,
-                description: 'A5 size diary with customizable cover, perfect for daily notes and reminders.',
-                category: 'desk-accessories',
-                isNew: true
-            },
-            // Wallets & Purses
-            {
-                id: 'prod-029',
-                name: 'Men\'s Bifold Wallet',
-                code: 'NGA-029',
-                imageUrl: 'https://picsum.photos/id/228/250/200', // Landscape
-                price: 850.00,
-                description: 'Classic bifold wallet with multiple card slots and a currency compartment. Can be personalized.',
-                category: 'wallets-purses',
-                isNew: false
-            },
-            {
-                id: 'prod-030',
-                name: 'Ladies Clutch Purse',
-                code: 'NGA-030',
-                imageUrl: 'https://picsum.photos/id/229/300/250', // Landscape
-                price: 1100.00,
-                description: 'Elegant clutch purse for ladies, suitable for corporate events or as a premium gift.',
-                category: 'wallets-purses',
+                id: 'prod-045',
+                name: 'Laptop Stand',
+                code: 'MS-101',
+                imageUrl: 'https://i.postimg.cc/mryYHmJF/MS101.jpg', // Landscape
+                price: 384.00,
+                description: 'Exclusive Corporate Gift',
+                category: 'gift-sets',
                 isNew: false
             },
             // Clocks (general category for table/wall clocks)
