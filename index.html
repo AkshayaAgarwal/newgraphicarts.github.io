@@ -234,6 +234,10 @@
     <img src="https://i.postimg.cc/hjvT2GGN/3.png" alt="New Graphic Arts" class="h-16 sm:h-20 object-contain">
 </div>
 <img src="https://i.postimg.cc/7Zr1qDBT/1.png" alt="New Graphic Arts Tag Line" class="h-16 sm:h-20 mx-auto mb-4 object-contain">
+<div class="absolute top-4 right-4 text-right md:flex-row md:items-center">
+        <p class="text-gray-700 text-xs font-semibold">Total Products</p>
+        <p id="product-count" class="text-blue-700 text-lg font-bold">0</p>
+    </div>
         </header>
 
         <div class="mb-10 pb-6 border-b border-gray-200">
@@ -299,8 +303,9 @@
                         </label>
                     </div>
                 </div>
-                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
-        <div class="mb-6 md:mb-0">
+                
+                 <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
+        <div class="mb-3 md:mb-0">
             <label class="block text-gray-700 text-lg font-bold mb-4">View or Download Documents:</label>
             <div class="grid grid-cols-1 gap-y-3 gap-x-6 text-gray-700">
                 <a href="https://drive.google.com/drive/folders/1hRJ-qAZlbkJd6fqDRMc29Nmyg3VGuwIe?usp=drive_link" class="text-blue-600 hover:underline inline-flex items-center" target="_blank">
@@ -308,17 +313,20 @@
                     <span class="text-base font-medium">All Products Brochure (PDF)</span>
                 </a>
             </div>
+            <br/>
+            <div class="mb-0">
+    <label class="block text-gray-700 text-lg font-bold">Search Products:</label>
+    <input type="text" id="product-search" placeholder="Search by product name..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200">
+</div>
         </div>
     </div>
 </div>
-                <div class="text-right mt-6 md:mt-0">
+                <!-- <div class="text-right mt-6 md:mt-0">
                     <p class="text-gray-700 text-md font-semibold">Total Products</p>
                     <p id="product-count" class="text-blue-700 text-4xl font-extrabold">0</p>
-                </div>
+                </div> -->
             </div>
         </div>
-
-
         <div id="product-cards-container" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-2">
             <div class="col-span-full text-center text-gray-500" id="loading-message"></div>
         </div>
@@ -1731,15 +1739,21 @@
 
         // Function to filter and update product display
         const filterProducts = () => {
-            const selectedCategories = Array.from(categoryCheckboxes)
-                .filter(cb => cb.checked)
-                .map(cb => cb.value);
+    const selectedCategories = Array.from(categoryCheckboxes)
+        .filter(cb => cb.checked)
+        .map(cb => cb.value);
 
-            const filteredProducts = allProducts.filter(product => {
-                return selectedCategories.length === 0 || selectedCategories.includes(product.category);
-            });
-            renderProductCards(filteredProducts);
-        };
+    // Get the search query and convert it to lowercase for case-insensitive matching
+    const searchQuery = productSearchInput.value.toLowerCase();
+
+    const filteredProducts = allProducts.filter(product => {
+        const matchesCategory = selectedCategories.length === 0 || selectedCategories.includes(product.category);
+        const matchesSearch = product.name.toLowerCase().includes(searchQuery) || product.category.toLowerCase().includes(searchQuery);
+
+        return matchesCategory && matchesSearch;
+    });
+    renderProductCards(filteredProducts);
+};
 
         // Initial render of all products when the page loads
         document.addEventListener('DOMContentLoaded', () => {
@@ -1767,6 +1781,7 @@
             modalContent.classList.remove('modal-content-exit-active', 'modal-content-exit');
             modalContent.classList.add('modal-content-enter-active');
         };
+        const productSearchInput = document.getElementById('product-search');
 
         // Function to close the modal
         const closeModal = () => {
@@ -1808,6 +1823,12 @@
                 console.warn("No product selected for inquiry.");
             }
         });
+        categoryCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', filterProducts);
+});
+
+// Add input listener for the search bar
+productSearchInput.addEventListener('input', filterProducts);
     </script>
 </body>
 </html>
