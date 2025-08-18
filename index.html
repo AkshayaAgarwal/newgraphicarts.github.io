@@ -303,7 +303,11 @@
                         </label>
                     </div>
                 </div>
-                
+                <div class="flex items-center justify-center sm:justify-end mb-4 md:hidden">
+    <button id="toggle-view-button" class="btn-secondary text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+        Show 2 per Row
+    </button>
+</div>
                  <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-3">
         <div class="mb-3 md:mb-0">
             <label class="block text-gray-700 text-lg font-bold mb-4">View or Download Documents:</label>
@@ -1647,6 +1651,8 @@
         const productCountElement = document.getElementById('product-count');
         const categoryCheckboxes = document.querySelectorAll('.category-checkbox');
         const loadingMessage = document.getElementById('loading-message');
+        const toggleViewButton = document.getElementById('toggle-view-button');
+
 
         // Modal elements
         const productModal = document.getElementById('product-modal');
@@ -1697,7 +1703,7 @@ card.className = 'product-card bg-white rounded-xl shadow-lg overflow-hidden bor
                         <button class="book-now-button flex-1 btn-primary text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
                             Book Now
                         </button>
-                        <button class="contact-us-button flex-1 btn-secondary text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1">
+                        <button class="contact-us-button flex-1 btn-secondary text-white text-sm font-bold py-2 px-4 rounded-full shadow-lg transition duration-300 ease-in-out transform hover:-translate-y-1 hidden sm:block">
                             Contact Us
                         </button>
                     </div>
@@ -1829,6 +1835,29 @@ card.className = 'product-card bg-white rounded-xl shadow-lg overflow-hidden bor
 
 // Add input listener for the search bar
 productSearchInput.addEventListener('input', filterProducts);
+
+categoryCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', filterProducts);
+});
+
+if (toggleViewButton) {
+    toggleViewButton.addEventListener('click', () => {
+        // Toggle the 'grid-cols-1' and 'grid-cols-2' classes on the product container
+        // This will only affect the layout on mobile (when the sm: class is not active)
+        const isCurrentlyOneColumn = productCardsContainer.classList.contains('grid-cols-1');
+
+        if (isCurrentlyOneColumn) {
+            productCardsContainer.classList.remove('grid-cols-1');
+            productCardsContainer.classList.add('grid-cols-2');
+            toggleViewButton.textContent = 'Show 1 per Row';
+        } else {
+            productCardsContainer.classList.remove('grid-cols-2');
+            productCardsContainer.classList.add('grid-cols-1');
+            toggleViewButton.textContent = 'Show 2 per Row';
+        }
+    });
+}
+
     </script>
 </body>
 </html>
